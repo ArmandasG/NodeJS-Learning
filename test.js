@@ -1,3 +1,10 @@
-const bla = 'mario'
+const description = 'yellow'
 
-console.log(bla);
+console.log(description);
+
+const greet = (name) => {
+    console.log(`hello, ${name}`);
+}
+
+greet('mario');
+greet('john');
