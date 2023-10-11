@@ -11,11 +11,9 @@ const login = process.env.login;
 const app = express();
 
 // connect to mongodb
-<<<<<<< HEAD
-const dbURI = 'mongodb+srv://YourActualLogin@nodenuts.resknbw.mongodb.net/node-tuts?retryWrites=true&w=majority';
-=======
+
 const dbURI = `mongodb+srv://${login}@nodenuts.resknbw.mongodb.net/node-tuts?retryWrites=true&w=majority`;
->>>>>>> dev
+
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err))
