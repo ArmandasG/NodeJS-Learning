@@ -1,2 +1,5 @@
 node_modules
 .env
+replace.sh
+replacement.txt
+git-filter-repo
